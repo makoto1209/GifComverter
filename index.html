@@ -16,12 +16,12 @@
 
     #drop-wrap{
       position: relative;
-      height: calc(100vh - 56px);
+      height: calc(100vh - 56px - 60px);
     }
 
     #drop-area{
       position: absolute;
-      inset: 80px;
+      inset: 100px;
       
       border: 3px dashed var(--nikai_gray);
       border-radius: 20px;
@@ -41,16 +41,28 @@
     </nav>
   </header>
   <main class="min-vh-100">
-      <div id="drop-wrap">
-        <div id="drop-area" class="d-flex justify-content-center align-items-center text-center">
-          <h2>
-            <p class="mb-0" id="main-text-area">
-              ここに画像ファイルを<br>
-              ドラッグ＆ドロップ
-            </p>
-          </h2>
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-start" style="margin-top: 30px;">
+          
+            画像ファイル(png,jpegなど)を、Xに投稿可能なGifアニメーションファイルに変換するツールです。<br>
+            画面にファイルをドラッグ＆ドロップしてください。(複数可)<br>
+            処理が終わるとダウンロードされます。
+          
         </div>
       </div>
+    </div>
+    
+    <div id="drop-wrap">
+      <div id="drop-area" class="d-flex justify-content-center align-items-center text-center">
+        <h2>
+          <p class="mb-0" id="main-text-area">
+            ここに画像ファイルを<br>
+            ドラッグ＆ドロップ
+          </p>
+        </h2>
+      </div>
+    </div>
   </main>
 
   <!-- 成功モーダル -->
